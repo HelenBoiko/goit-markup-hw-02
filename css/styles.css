@@ -9,10 +9,14 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   background-color: var(--bg-color);
   font-weight: 400;
+}
+
+ul{
+  list-style: none;
 }
 /* header */
 .logo {
@@ -55,7 +59,9 @@ body {
 }
 
 .section-page {
+  font-family: Roboto;
   font-weight: 900;
+  font-style: normal;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -64,8 +70,9 @@ body {
 }
 
 .section-button {
-  color: var(--bg-color);
-  background: var(--accent-link-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -73,9 +80,15 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px;
-  border-radius: 4px;
-  
+  border-radius: 4px; 
+  color: var(--bg-color);
+  background: var(--accent-link-color);
 }
+
+.main-section {
+  color: var(--main-text-color);
+}
+
 h2 {
   font-family: Roboto;
   font-style: normal;
@@ -84,6 +97,17 @@ h2 {
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.main-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--title-color);
 }
 
@@ -109,21 +133,6 @@ h2 {
 
 }
 
-.main-section {
-  color: var(--main-text-color);
-}
-
-.main-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-color);
-}
-
 p {
   font-family: Roboto;
   font-style: normal;
@@ -144,15 +153,20 @@ p {
   color: var(--main-text-color);
 }
 
-/* button */
-.button [type="button"] {
-  color: var(--title-color);
-  background-color: var(--button-color);
+/* button  */
+.sektion-button [type="button"] {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center; 
   letter-spacing: 0.06em;
   text-decoration-line: none;
+  color: var(--title-color);
+  background-color: var(--button-color);
 
 }
 
@@ -161,7 +175,7 @@ button {
   
 }
 
-.button {
+.item-button .button {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -177,6 +191,7 @@ button {
   color: var(--button-color);
   background-color: var(--accent-link-color);
 }
+/*footer*/
 
 .footer-color {
   background-color: var(--bg-color-section);
