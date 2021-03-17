@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 			
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,7 +18,7 @@
     <!--Шапка сайта-->
     <header>
         <nav>
-            <a class="logo" href="">WebStudio</a>
+            <a class="logo" href="./index.html">Web<span class="logo-studio-black">Studio</span></a>
             <ul class="list-nav">
                 <li><a href="./index.html">Студия</a></li>
                 <li><a href="./index.html">Портфолио</a></li>
@@ -33,7 +33,7 @@
 				<!--main section-->
 	  <main>
 			<section>
-				<h1 hidden>фильтры</h1>
+				<h1 class="visually-hidden">фильтры</h1>
 				<ul class="item-button">
 					<li><button  class="button" type="button">Все</button></li>
 					<li><button  class="button" type="button">Веб-сайты</button></li>
@@ -92,13 +92,14 @@
 
 		</main>
 <footer class="footer-color">
-        <a class="logo" href="">WebStudio</a>
-      		<p>г. Киев, пр-т Леси Украинки, 26</p>
+        <a class="logo" href="./index.html">Web<span class="logo-studio-white">Studio</span></a>
+      		
 		 <address class="contact-nav-color">
-        <ul>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+380991111111</a></li>
-        </ul>
+				<p>г. Киев, пр-т Леси Украинки, 26</p>
+			<ul class="contact-nav">
+			 <li><a href="mailto:info@example.com">info@example.com</a></li>
+			 <li><a href="tel:+380991111111">+380991111111</a></li>
+			</ul>
       </address>
     </footer>
     </body>

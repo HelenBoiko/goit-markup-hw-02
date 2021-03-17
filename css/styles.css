@@ -5,12 +5,13 @@
   --accent-link-color: #2196f3;
   --bg-color-section: #2f303a;
   --button-color: #f5f4fa;
-  --bg-adress-color: rgba(255, 255, 255, 0.6);
+  --bg-adress-color: rgba(255, 255, 255, 0.6); 
+  --logo-header-color: #000
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  
   background-color: var(--bg-color);
   font-weight: 400;
 }
@@ -30,6 +31,14 @@ ul{
   color: var(--accent-link-color);
 }
 
+.logo-studio-black {
+  color: var(--logo-header-color);
+}
+
+.logo-studio-white {
+  color: var(--bg-color);
+}
+
 .list-nav a,
 .contact-nav a {
   font-family: Roboto;
@@ -42,7 +51,19 @@ ul{
   color: var(--title-color);
 }
 
-.list-nav a:hover {
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list-nav a:hover,
+.list-nav a:focus {
   color: var(--accent-link-color);
   
 }
@@ -51,6 +72,12 @@ ul{
 .contact-nav a:focus {
   color: var(--accent-link-color);
 }
+
+.item-button button:hover,
+.item-button button:focus {
+  color:  var(--accent-link-color);
+}
+
 
 /* main section */
 .section {
@@ -89,7 +116,11 @@ ul{
   color: var(--main-text-color);
 }
 
-h2 {
+.section-command {
+  background-color: var(--button-color);
+}
+
+.title-command {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -133,13 +164,14 @@ h2 {
 
 }
 
-p {
+.list-name {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-text-color);
 }
 
@@ -187,7 +219,8 @@ button {
   background-color: var(--button-color);
 }
 
-.button:hover {
+.button:hover
+.button:focus {
   color: var(--button-color);
   background-color: var(--accent-link-color);
 }

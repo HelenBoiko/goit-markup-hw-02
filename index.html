@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -19,7 +19,7 @@
     <!--Шапка сайта-->
   <header>
     <nav>
-      <a class="logo" href="" >WebStudio</a>
+      <a class="logo" href="./index.html">Web<span class="logo-studio-black">Studio</span></a>
         <ul class="list-nav">
           <li><a href="./portfolio.html">Студия</a></li>
           <li><a href="./portfolio.html">Портфолио</a></li>
@@ -35,11 +35,11 @@
   <main>
     <section class="section">
       <h1 class="section-page">Эффективные решения <br />для вашего бизнеса</h1>
-				<button class="section-button" tupe="button" >Заказать услугу</button>
+				<button class="section-button" type="button" >Заказать услугу</button>
     </section>
     <section class="main-section">
             <!--Вторая секция. Наши особености-->
-            <h2 hidden>Наши особености</h2>
+            <h2 class="visually-hidden">Наши особености</h2>
         <ul>
           <li>
             <h3 class="main-title">Внимание к деталям</h3>
@@ -68,8 +68,8 @@
         </ul>
     </section>
         <!--Третья секция. Чем мы занимаемся-->
-    <section>
-      <h2>Чем мы занимаемся</h2>
+    <section >
+      <h2 class="title-command">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img src="imeges/box.1.png" alt="man working" width="370">
@@ -83,38 +83,38 @@
         </ul>
     </section>
       <!--Четвёртая секция. Наша команда-->
-    <section>
-      <h2>Наша команда</h2>
+    <section class="section-command">
+      <h2  class="title-command">Наша команда</h2>
 				<ul>
 						<li>
           		<img src="imeges/img.jpg" alt="Designer" width="270">
 							<h3 class="title-name">Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+              <p class="list-name">Product Designer</p>
 						</li>
 						<li>
               <img src="imeges/img(1).jpg" alt="Frontend" width="270">
               <h3 class="title-name">Ольга Репина</h3>
-              <p>Frontend Developer</p>
+              <p class="list-name">Frontend Developer</p>
 						</li>
 						<li>
               <img src="imeges/img(2).jpg" alt="Marketing" width="270">
               <h3 class="title-name">Николай Тарасов</h3>
-              <p>Marketing</p>
+              <p class="list-name">Marketing</p>
 						</li>
 						<li>
               <img src="imeges/img(3).jpg" alt="Designer" width="270">
               <h3 class="title-name">Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <p class="list-name">UI Designer</p>
 						</li>
 				</ul>
         </section>
     </main>
     <!--Футер-->
     <footer class="footer-color">
-        <a class="logo" href="">WebStudio</a>
-				  <p>г. Киев, пр-т Леси Украинки, 26</p>
+        <a class="logo" href="./index.html">Web<span class="logo-studio-white">Studio</span></a>
         <address class="contact-nav-color">
-					<ul>
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
+					<ul >
 						<li><a href="mailto:info@example.com">info@example.com</a></li>
             <li><a href="tel:+380991111111">+380991111111</a></li>
 					</ul>
