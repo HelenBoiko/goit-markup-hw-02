@@ -78,6 +78,10 @@ ul{
   color:  var(--accent-link-color);
 }
 
+.list-nav .current {
+  color: var(--accent-link-color);
+}
+
 
 /* main section */
 .section {
